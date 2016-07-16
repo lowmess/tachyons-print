@@ -1,6 +1,7 @@
 /*
 
-   MEDIA QUERIES
+   Media Query Extensions:
+     -p = print
 
   Use this scaffolding to create or extend your own modules with tachyons
   style architecture.
@@ -8,15 +9,6 @@
 */
 
 
-@media (--breakpoint-not-small) {
+@media print {
 
 }
-
-@media (--breakpoint-medium) {
-
-}
-
-@media (--breakpoint-large) {
-
-}
-

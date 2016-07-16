@@ -2,6 +2,9 @@
 
   TABLES
 
+  Media Query Extensions:
+    -p = print
+
 */
 
 :root {
@@ -11,23 +14,25 @@
   --near-white: #f4f4f4;
 }
 
-.collapse {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
+@meida print {
+  .collapse {
+      border-collapse: collapse;
+      border-spacing: 0;
+  }
 
-.striped--moon-gray:nth-child(odd) {
-  background-color: var(--light-silver);
-}
+  .striped--moon-gray:nth-child(odd) {
+    background-color: var(--light-silver);
+  }
 
-.striped--moon-gray:nth-child(odd) {
-  background-color: var(--moon-gray);
-}
+  .striped--moon-gray:nth-child(odd) {
+    background-color: var(--moon-gray);
+  }
 
-.striped--light-gray:nth-child(odd) {
-  background-color: var(--light-gray);
-}
+  .striped--light-gray:nth-child(odd) {
+    background-color: var(--light-gray);
+  }
 
-.striped--near-white:nth-child(odd) {
-  background-color: var(--near-white);
+  .striped--near-white:nth-child(odd) {
+    background-color: var(--near-white);
+  }
 }

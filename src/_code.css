@@ -2,10 +2,15 @@
 
    CODE
 
+   Media Query Extensions:
+     -p = print
+
 */
 
-.pre {
-  overflow-x: auto;
-  overflow-y: hidden;
-  overflow:   scroll;
+@media print {
+  .pre-p {
+    overflow-x: auto;
+    overflow-y: hidden;
+    overflow:   scroll;
+  }
 }

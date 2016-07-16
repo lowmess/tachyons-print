@@ -1,10 +1,9 @@
-@custom-media --breakpoint-not-small screen and (min-width: 48em);
-@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
-@custom-media --breakpoint-large screen and (min-width: 64em);
-
 /*
 
    VISIBILITY
+
+   Media Query Extensions:
+     -p = print
 
 */
 
@@ -14,37 +13,11 @@
     Ref: http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 */
 
-.clip {
-  position: fixed !important;
-  _position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-}
-
-@media (--breakpoint-not-small) {
-  .clip-ns {
+@media print {
+  .clip-p {
     position: fixed !important;
     _position: absolute !important;
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
   }
 }
-
-@media (--breakpoint-medium) {
-  .clip-m {
-    position: fixed !important;
-    _position: absolute !important;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-  }
-}
-
-@media (--breakpoint-large) {
-  .clip-l {
-    position: fixed !important;
-    _position: absolute !important;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-  }
-}
-

@@ -2,6 +2,11 @@
 
    LISTS
 
+   Media Query Extensions:
+     -p = print
+
 */
 
-.list {         list-style-type: none; }
+@media print {
+  .list-p { list-style-type: none; }
+}

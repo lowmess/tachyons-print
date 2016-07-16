@@ -7,5 +7,6 @@
 
 */
 
-.debug * { outline: 1px solid gold; }
-
+@media print {
+  .debug-p * { outline: 1px solid gold; }
+}

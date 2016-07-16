@@ -1,3 +1,4 @@
+@media print {
 
 body {        outline: 1px solid  #2980B9!important; }
 article {     outline: 1px solid  #3498DB!important; }
@@ -118,3 +119,4 @@ span {        outline: 1px solid #CC2643!important; }
 br {          outline: 1px solid #DB687D!important; }
 wbr {         outline: 1px solid #DB175B!important; }
 
+}

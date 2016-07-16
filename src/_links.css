@@ -2,24 +2,13 @@
 
    LINKS
 
+   Media Query Extensions:
+     -p = print
+
 */
 
-.link {
-  text-decoration: none;
-  transition: color .15s ease-in;
+@media print {
+  .link-p {
+    text-decoration: none;
+  }
 }
-
-.link:link,
-.link:visited {
-  transition: color .15s ease-in;
-}
-.link:hover   {
-  transition: color .15s ease-in;
-}
-.link:active  {
-  transition: color .15s ease-in;
-}
-.link:focus   {
-  transition: color .15s ease-in;
-}
-

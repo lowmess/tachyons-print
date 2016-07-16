@@ -1,6 +1,6 @@
-# TACHYONS
+# TACHYONS PRINT
 
-Functional CSS for humans.
+Functional CSS for humans (and printers).
 
 Quickly build and design new UI without writing CSS.
 
@@ -29,22 +29,12 @@ Quickly build and design new UI without writing CSS.
 Docs can be found at http://tachyons.io/docs
 The modules are generally pretty small and thus easy to read and grock if you're familiar with css at all.
 
-### Use the CDN
-
-The quickest and easiest way to start using tachyons is to include a reference
-to the minified file in the head of your html file.
-
-Currently the latest version is 4.0.0-beta.35
-```html
-<link rel="stylesheet" href="https://npmcdn.com/tachyons@4.0.0-beta.35/css/tachyons.min.css">
-```
-
 ### Local Setup
 
 Clone the repo from github and install dependencies through npm.
 
 ```
-git clone https://github.com/tachyons-css/tachyons.git
+git clone https://github.com/lowmess/tachyons-print.git
 cd tachyons
 npm install
 ```
