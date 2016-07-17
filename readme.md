@@ -35,7 +35,7 @@ Clone the repo from github and install dependencies through npm.
 
 ```
 git clone https://github.com/lowmess/tachyons-print.git
-cd tachyons
+cd tachyons-print
 npm install
 ```
 
