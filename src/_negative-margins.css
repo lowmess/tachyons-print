@@ -1,0 +1,64 @@
+/*
+   NEGATIVE MARGINS
+   Base:
+     n = negative
+   Modifiers:
+     a = all
+     t = top
+     r = right
+     b = bottom
+     l = left
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+   Media Query Extensions:
+     -p = print
+*/
+
+@media print {
+
+  .na1-p { margin: -var(--spacing-extra-small); }
+  .na2-p { margin: -var(--spacing-small); }
+  .na3-p { margin: -var(--spacing-medium); }
+  .na4-p { margin: -var(--spacing-large); }
+  .na5-p { margin: -var(--spacing-extra-large); }
+  .na6-p { margin: -var(--spacing-extra-extra-large); }
+  .na7-p { margin: -var(--spacing-extra-extra-extra-large); }
+
+  .nl1-p { margin-left: -var(--spacing-extra-small); }
+  .nl2-p { margin-left: -var(--spacing-small); }
+  .nl3-p { margin-left: -var(--spacing-medium); }
+  .nl4-p { margin-left: -var(--spacing-large); }
+  .nl5-p { margin-left: -var(--spacing-extra-large); }
+  .nl6-p { margin-left: -var(--spacing-extra-extra-large); }
+  .nl7-p { margin-left: -var(--spacing-extra-extra-extra-large); }
+
+  .nr1-p { margin-right: -var(--spacing-extra-small); }
+  .nr2-p { margin-right: -var(--spacing-small); }
+  .nr3-p { margin-right: -var(--spacing-medium); }
+  .nr4-p { margin-right: -var(--spacing-large); }
+  .nr5-p { margin-right: -var(--spacing-extra-large); }
+  .nr6-p { margin-right: -var(--spacing-extra-extra-large); }
+  .nr7-p { margin-right: -var(--spacing-extra-extra-extra-large); }
+
+  .nb1-p { margin-bottom: -var(--spacing-extra-small); }
+  .nb2-p { margin-bottom: -var(--spacing-small); }
+  .nb3-p { margin-bottom: -var(--spacing-medium); }
+  .nb4-p { margin-bottom: -var(--spacing-large); }
+  .nb5-p { margin-bottom: -var(--spacing-extra-large); }
+  .nb6-p { margin-bottom: -var(--spacing-extra-extra-large); }
+  .nb7-p { margin-bottom: -var(--spacing-extra-extra-extra-large); }
+
+  .nt1-p { margin-top: -var(--spacing-extra-small); }
+  .nt2-p { margin-top: -var(--spacing-small); }
+  .nt3-p { margin-top: -var(--spacing-medium); }
+  .nt4-p { margin-top: -var(--spacing-large); }
+  .nt5-p { margin-top: -var(--spacing-extra-large); }
+  .nt6-p { margin-top: -var(--spacing-extra-extra-large); }
+  .nt7-p { margin-top: -var(--spacing-extra-extra-extra-large); }
+
+}
