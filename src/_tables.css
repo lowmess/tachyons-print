@@ -14,7 +14,7 @@
   --near-white: #f4f4f4;
 }
 
-@meida print {
+@media print {
   .collapse {
       border-collapse: collapse;
       border-spacing: 0;
