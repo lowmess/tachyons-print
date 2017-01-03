@@ -1,4 +1,4 @@
-/* TACHYONS PRINT v4.6.1| github.com/lowmess/tachyons-print */
+/* TACHYONS PRINT v4.6.2| github.com/lowmess/tachyons-print */
 /* Modules */
 /*
    ASPECT RATIOS
@@ -423,13 +423,6 @@
     -p = print
 
 */
-@meida print {
- .collapse { border-collapse: collapse; border-spacing: 0; }
- .striped--moon-gray:nth-child(odd) { background-color: #aaa; }
- .striped--moon-gray:nth-child(odd) { background-color: #ccc; }
- .striped--light-gray:nth-child(odd) { background-color: #eee; }
- .striped--near-white:nth-child(odd) { background-color: #f4f4f4; }
-}
 /*
 
    TEXT DECORATION
@@ -1057,6 +1050,11 @@
  .mh5-p { margin-left: 4rem; margin-right: 4rem; }
  .mh6-p { margin-left: 8rem; margin-right: 8rem; }
  .mh7-p { margin-left: 16rem; margin-right: 16rem; }
+ .collapse { border-collapse: collapse; border-spacing: 0; }
+ .striped--moon-gray:nth-child(odd) { background-color: #aaa; }
+ .striped--moon-gray:nth-child(odd) { background-color: #ccc; }
+ .striped--light-gray:nth-child(odd) { background-color: #eee; }
+ .striped--near-white:nth-child(odd) { background-color: #f4f4f4; }
  .strike-p { text-decoration: line-through; }
  .underline-p { text-decoration: underline; }
  .no-underline-p { text-decoration: none; }
