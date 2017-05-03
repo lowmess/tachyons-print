@@ -1,6 +1,6 @@
 {
   "name": "tachyons-print",
-  "version": "4.7.0",
+  "version": "4.7.1",
   "description": "Functional CSS for humans (and printers)",
   "author": "mrmrs",
   "style": "css/tachyons-print.min.css",
