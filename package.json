@@ -1,6 +1,6 @@
 {
   "name": "tachyons-print",
-  "version": "4.6.2",
+  "version": "4.7.0",
   "description": "Functional CSS for humans (and printers)",
   "author": "mrmrs",
   "style": "css/tachyons-print.min.css",
@@ -22,7 +22,7 @@
   "devDependencies": {
     "copy-files": "^0.1.0",
     "immutable-css-cli": "^1.1.1",
-    "normalize.css": "^4.2.0",
+    "normalize.css": "^6.0.0",
     "tachyons-modules": "^1.1.8",
     "tachyons-cli": "^1.0.10",
     "watch": "^1.0.1"
@@ -47,6 +47,6 @@
     "build": "npm run build:css && npm run build:minify",
     "build:css": "tachyons src/tachyons-print.css > css/tachyons-print.css",
     "build:minify": "tachyons src/tachyons-print.css -m > css/tachyons-print.min.css",
-    "build:watch": "watch 'npm run build' ./src/"
+    "build:watch": "watch \"npm run build\" ./src/"
   }
 }

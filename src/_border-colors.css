@@ -87,6 +87,7 @@
   .b--gray-p {         border-color: var(--gray); }
   .b--silver-p {       border-color: var(--silver); }
   .b--light-silver-p { border-color: var(--light-silver); }
+  .b--moon-gray-p {    border-color: var(--moon-gray); }
   .b--light-gray-p {   border-color: var(--light-gray); }
   .b--near-white-p {   border-color: var(--near-white); }
   .b--white-p {        border-color: var(--white); }

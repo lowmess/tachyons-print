@@ -16,7 +16,12 @@
   }
   .flex-none-p { flex: none; }
   .flex-column-p { flex-direction: column; }
+  .flex-row-p { flex-direction: row; }
   .flex-wrap-p { flex-wrap: wrap; }
+  .flex-column-reverse-p { flex-direction: column-reverse; }
+  .flex-row-reverse-p { flex-direction: row-reverse; }
+  .flex-wrap-reverse-p    { flex-wrap: wrap-reverse; }
+
   .items-start-p { align-items: flex-start; }
   .items-end-p { align-items: flex-end; }
   .items-center-p { align-items: center; }

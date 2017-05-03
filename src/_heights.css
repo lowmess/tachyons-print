@@ -21,6 +21,8 @@
   .h-75-p { height: 75%; }
   .h-100-p { height: 100%; }
 
+  .min-h-100-p { min-height: 100%; }
+
   /* String Properties */
   .h-auto-p { height: auto; }
   .h-inherit-p { height: inherit; }

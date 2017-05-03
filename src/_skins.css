@@ -147,6 +147,8 @@
   .light-yellow-p { color: var(--light-yellow); }
   .light-red-p { color: var(--light-red); }
 
+  .color-inherit-p { color: inherit; }
+
   .bg-black-90-p {         background-color: var(--black-90); }
   .bg-black-80-p {         background-color: var(--black-80); }
   .bg-black-70-p {         background-color: var(--black-70); }
@@ -207,4 +209,6 @@
   .bg-light-pink-p { background-color: var(--light-pink); }
   .bg-light-yellow-p { background-color: var(--light-yellow); }
   .bg-light-red-p { background-color: var(--light-red); }
+
+  .bg-inherit-p { background-color: inherit; }
 }

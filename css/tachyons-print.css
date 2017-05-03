@@ -1,4 +1,4 @@
-/* TACHYONS PRINT v4.6.2| github.com/lowmess/tachyons-print */
+/* TACHYONS PRINT v4.7.1| github.com/lowmess/tachyons-print */
 /* Modules */
 /*
    ASPECT RATIOS
@@ -176,9 +176,9 @@
     it    = inline-table
     t     = table
     tc    = table-cell
-    tr    = table-row
-    tcol  = table-column
-    tcolg = table-column-group
+    t-row          = table-row
+    t-column       = table-column
+    t-column-group = table-column-group
 
    Media Query Extensions:
      -p = print
@@ -312,15 +312,20 @@
      -10  = literal value 10%
      -20  = literal value 20%
      -25  = literal value 25%
+     -30  = literal value 30%
      -33  = literal value 33%
      -34  = literal value 34%
      -40  = literal value 40%
      -50  = literal value 50%
      -60  = literal value 60%
+     -70  = literal value 70%
      -75  = literal value 75%
      -80  = literal value 80%
+     -90  = literal value 90%
      -100 = literal value 100%
 
+     -third      = 100% / 3 (Not supported in opera mini or IE8)
+     -two-thirds = 100% / 1.5 (Not supported in opera mini or IE8)
      -auto  = string value auto
 
 
@@ -541,6 +546,7 @@
  .b--gray-p { border-color: #777; }
  .b--silver-p { border-color: #999; }
  .b--light-silver-p { border-color: #aaa; }
+ .b--moon-gray-p { border-color: #ccc; }
  .b--light-gray-p { border-color: #eee; }
  .b--near-white-p { border-color: #f4f4f4; }
  .b--white-p { border-color: #fff; }
@@ -669,7 +675,11 @@
  .flex-auto-p { -webkit-box-flex: 1; -ms-flex: 1 1 auto; flex: 1 1 auto; min-width: 0; /* 1 */ min-height: 0; /* 1 */ }
  .flex-none-p { -webkit-box-flex: 0; -ms-flex: none; flex: none; }
  .flex-column-p { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+ .flex-row-p { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
  .flex-wrap-p { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+ .flex-column-reverse-p { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
+ .flex-row-reverse-p { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
+ .flex-wrap-reverse-p { -ms-flex-wrap: wrap-reverse; flex-wrap: wrap-reverse; }
  .items-start-p { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
  .items-end-p { -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
  .items-center-p { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
@@ -725,7 +735,8 @@
  .h-25-p { height: 25%; }
  .h-50-p { height: 50%; }
  .h-75-p { height: 75%; }
- .h-100-p { height: 100%; }/* String Properties */
+ .h-100-p { height: 100%; }
+ .min-h-100-p { min-height: 100%; }/* String Properties */
  .h-auto-p { height: auto; }
  .h-inherit-p { height: inherit; }
  .tracked-p { letter-spacing: .16em; }
@@ -790,14 +801,19 @@
  .w-10-p { width: 10%; }
  .w-20-p { width: 20%; }
  .w-25-p { width: 25%; }
+ .w-60-p { width: 30%; }
  .w-33-p { width: 33%; }
  .w-34-p { width: 34%; }
  .w-40-p { width: 40%; }
  .w-50-p { width: 50%; }
  .w-60-p { width: 60%; }
+ .w-60-p { width: 70%; }
  .w-75-p { width: 75%; }
  .w-80-p { width: 80%; }
+ .w-60-p { width: 90%; }
  .w-100-p { width: 100%; }
+ .w-third-p { width: calc( 100% / 3 ); }
+ .w-two-thirds-p { width: calc( 100% / 1.5 ); }
  .w-auto-p { width: auto; }
  .overflow-visible-p { overflow: visible; }
  .overflow-hidden-p { overflow: hidden; }
@@ -884,6 +900,7 @@
  .light-pink-p { color: #efa4b8; }
  .light-yellow-p { color: #f3dd70; }
  .light-red-p { color: #ffd3c0; }
+ .color-inherit-p { color: inherit; }
  .bg-black-90-p { background-color: rgba( 0, 0, 0, .9 ); }
  .bg-black-80-p { background-color: rgba( 0, 0, 0, .8 ); }
  .bg-black-70-p { background-color: rgba( 0, 0, 0, .7 ); }
@@ -938,6 +955,7 @@
  .bg-light-pink-p { background-color: #efa4b8; }
  .bg-light-yellow-p { background-color: #f3dd70; }
  .bg-light-red-p { background-color: #ffd3c0; }
+ .bg-inherit-p { background-color: inherit; }
  .pa0-p { padding: 0; }
  .pa1-p { padding: .25rem; }
  .pa2-p { padding: .5rem; }
@@ -1072,7 +1090,8 @@
  .f3-p { font-size: 1.5rem; }
  .f4-p { font-size: 1.25rem; }
  .f5-p { font-size: 1rem; }
- .f6-p { font-size: .875rem; }/* Measure is limited to ~66 characters */
+ .f6-p { font-size: .875rem; }
+ .f7-p { font-size: .75rem; }/* Measure is limited to ~66 characters */
  .measure-p { max-width: 30em; }/* Measure is limited to ~80 characters */
  .measure-wide-p { max-width: 34em; }/* Measure is limited to ~45 characters */
  .measure-narrow-p { max-width: 20em; }/* Book paragraph style - paragraphs are indented with no vertical spacing. */

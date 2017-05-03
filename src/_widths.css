@@ -15,15 +15,20 @@
      -10  = literal value 10%
      -20  = literal value 20%
      -25  = literal value 25%
+     -30  = literal value 30%
      -33  = literal value 33%
      -34  = literal value 34%
      -40  = literal value 40%
      -50  = literal value 50%
      -60  = literal value 60%
+     -70  = literal value 70%
      -75  = literal value 75%
      -80  = literal value 80%
+     -90  = literal value 90%
      -100 = literal value 100%
 
+     -third      = 100% / 3 (Not supported in opera mini or IE8)
+     -two-thirds = 100% / 1.5 (Not supported in opera mini or IE8)
      -auto  = string value auto
 
 
@@ -42,13 +47,18 @@
   .w-10-p { width:  10%; }
   .w-20-p { width:  20%; }
   .w-25-p { width:  25%; }
+  .w-60-p { width:  30%; }
   .w-33-p { width:  33%; }
   .w-34-p { width:  34%; }
   .w-40-p { width:  40%; }
   .w-50-p { width:  50%; }
   .w-60-p { width:  60%; }
+  .w-60-p { width:  70%; }
   .w-75-p { width:  75%; }
   .w-80-p { width:  80%; }
+  .w-60-p { width:  90%; }
   .w-100-p { width: 100%; }
+  .w-third-p { width: calc(100% / 3); }
+  .w-two-thirds-p { width: calc(100% / 1.5); }
   .w-auto-p { width: auto; }
 }
